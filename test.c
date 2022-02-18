@@ -1,8 +1,8 @@
 
-#include "fouzia.h"
+// #include "fouzia.h"
 #include <stdio.h>
 
 int main(int argc, char **argv)
 {
-    if(argc > 0) printf("%i\n", num(argv[1]));
+    if(argc > 0) printf("%s\n", argv[1]);
 }

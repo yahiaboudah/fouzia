@@ -2,7 +2,7 @@
 #include "fouzia.h"
 #include <string.h>
 
-int num(int N)
+char* num(char* ss)
 {
-    return N+1;
+    return ss;
 }
