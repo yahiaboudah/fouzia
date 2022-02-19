@@ -1,11 +1,13 @@
 
 # -- MakeFile --
 
-test: test.o
-	g++ test.o -o test -l m
+.PHONY: clean
 
-test.o: test.c
-	g++ -c test.c
+build/exe/test: test.o
+	g++ test.o -o build/exe/test -l m
+	
+test.o: src/test.c
+	g++ -c src/test.c
 
 clean:
-	rm -f *.o test
+	rm -f *.o
